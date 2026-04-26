@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Sposoby podłączania styli</title>
+</head>
+<body>
+
+<h2><b>Sposoby podłączania styli do strony (skrócone zestawienie).</b></h2>
+
+<h3><p><b><u>1) Zewnętrzny arkusz stylów</h3></u></b></p>
+<table border="1" width="600">
+<tr><td>
+<pre>
+&lt;head&gt;
+  &lt;link rel="stylesheet" type="text/css" href="style.css" /&gt;
+&lt;/head&gt;
+</pre>
+</td></tr>
+</table>
+
+<h3><p><b><u>2) Styl lokalny (liniowy, w linii)</h3></u></b></p>
+<table border="1" width="600">
+<tr><td>
+<pre>
+&lt;selektor style="cecha1: wartość1; cecha2: wartość2;"&gt;
+  ...
+&lt;/selektor&gt;
+</pre>
+</td></tr>
+</table>
+
+<h3><p><b><u>3) Wewnętrzny arkusz stylów</h3></u></b></p>
+<table border="1" width="600">
+<tr><td>
+<pre>
+&lt;head&gt;
+&lt;style type="text/css"&gt;
+selektor1 { cecha: wartość; cecha2: wartość2; }
+selektor2 { cecha: wartość; cecha2: wartość2; }
+&lt;/style&gt;
+&lt;/head&gt;
+</pre>
+</td></tr>
+</table>
+
+<h3><p><b><u>4) Alternatywny arkusz stylów</h3></u></b></p>
+<table border="1" width="600">
+<tr><td>
+<pre>
+&lt;head&gt;
+&lt;link rel="stylesheet" type="text/css" href="style.css" title="Domyślny" /&gt;
+&lt;link rel="alternate stylesheet" type="text/css" href="style1.css" title="Styl 1" /&gt;
+&lt;link rel="alternate stylesheet" type="text/css" href="style2.css" title="Styl 2" /&gt;
+&lt;/head&gt;
+</pre>
+</td></tr>
+</table>
+
+<h3><p><b><u>5) Import arkusza stylów</h3></u></b></p>
+<table border="1" width="600">
+<tr><td>
+<pre>
+&lt;style type="text/css"&gt;
+@import url("adres_arkusza.css");
+&lt;/style&gt;
+</pre>
+</td></tr>
+</table>
+
+</body>
+</html>
+
+<!--Jankowski_Z4_html-->
